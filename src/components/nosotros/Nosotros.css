@@ -1,0 +1,42 @@
+.nosotros-container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C1710;
+    color: var(--BLANCO);
+    
+}
+
+.nosotros-container .texto {
+    flex: 2;
+    padding-left: 50px;
+}
+
+.nosotros-container .texto > h4 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.nosotros-container .texto > p {
+    font-size: 1.1rem;
+}
+
+.nosotros-container .foto {
+    flex: 2;
+    overflow: hidden;
+}
+
+img {
+   width: 100%;
+   opacity: 0.9;
+   filter: blur(0.5px);
+   transition: 2s ease;
+}
+img:hover {
+    transform: scale(1.2) translateY(-15px);
+    opacity: 1;
+    filter: blur(0px);  
+}

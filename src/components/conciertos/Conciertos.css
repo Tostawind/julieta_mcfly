@@ -1,0 +1,89 @@
+.conciertos-container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 150px 200px;   
+}
+
+.conciertos-container > h3 {
+    width: 300px;
+    font-size: 2.3rem;
+    background-color: var(--NEGRO);
+    color: var(--BLANCO);
+    text-align: center;
+    padding: 5px;
+}
+
+.lista-conciertos {
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.card-concierto:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-concierto {
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    font-weight: bold;
+}
+
+.fecha {
+ 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fecha .dia {
+    font-size: 3rem;
+}
+
+.fecha .mes {
+    font-size: 1.5rem;
+}
+
+.localizacion {
+    flex: 5;
+    padding-left: 15px;
+}
+
+.localizacion .nombre-localizacion {
+    font-size: 1.8rem;
+}
+
+.localizacion .linea {
+    height: 2px;
+    width: 80%;
+    background-color: var(--NEGRO);
+}
+
+.localizacion .ciudad {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.card-concierto .entrada {
+    border: 2px solid var(--NEGRO);
+    color: var(--NEGRO);
+    flex: 2;
+    font-size: 1.3rem;
+    display: block;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.card-concierto .entrada:hover {
+    color: var(--BLANCO);
+    background-color: var(--NEGRO);
+}

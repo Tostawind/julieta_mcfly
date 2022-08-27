@@ -1,0 +1,77 @@
+.cover-container {
+    height: 100vh;
+    width: 100%;
+    padding-top: 150px;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+
+
+.cover-container > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover-container > h1 {
+    font-size: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--BLANCO);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    mix-blend-mode: multiply;
+}
+
+
+
+.botones-container {
+    position: absolute; 
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones-container > a {
+    width: 220px;
+    height: 50px;
+    margin: 0 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--BLANCO);
+    transition: 0.4s ease;
+}
+
+.botones-container > a:hover {
+    transform: scale(1.1);
+}
+
+.botones-container > a:nth-of-type(1) {
+    background-color: var(--SPOTIFY); 
+}
+
+.botones-container > a:nth-of-type(2) {
+    background-color: var(--YOUTUBE); 
+}
+
+
+
