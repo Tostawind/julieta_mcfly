@@ -40,3 +40,24 @@ img:hover {
     opacity: 1;
     filter: blur(0px);  
 }
+
+@media screen and (max-width: 960px) {
+    .nosotros-container {
+        flex-direction: column; 
+    }
+    
+    .nosotros-container .texto {
+        text-align: center;
+        padding: 50px;
+    }
+
+    
+    .nosotros-container .foto {
+        flex: 3;
+        text-align: center;
+    }
+    
+    img {
+       width: 70%;
+    }
+}

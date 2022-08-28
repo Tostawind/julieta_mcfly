@@ -24,7 +24,7 @@
 }
 
 .card-concierto {
-    padding-right: 15px;
+    padding: 0 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,4 +86,48 @@
 .card-concierto .entrada:hover {
     color: var(--BLANCO);
     background-color: var(--NEGRO);
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .conciertos-container {
+        padding: 150px 10px;   
+    }
+    
+    .conciertos-container > h3 {
+        width: 250px;
+        font-size: 2rem;
+    }
+    
+    .lista-conciertos {
+        width: 90%;
+    }
+    
+    .fecha .dia {
+        font-size: 2.5rem;
+    }
+    
+    .fecha .mes {
+        font-size: 1.2rem;
+    }
+    
+    .localizacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+    
+    .localizacion .nombre-localizacion {
+        font-size: 1.6rem;
+    }
+    
+    .localizacion .ciudad {
+        font-size: 1rem;
+    }
+    
+    .card-concierto .entrada {
+        font-size: 1rem;
+    }
 }
